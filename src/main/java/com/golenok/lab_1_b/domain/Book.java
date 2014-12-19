@@ -51,11 +51,11 @@ public class Book {
 
     @Override
     public boolean equals(Object obj) {
-        boolean isEqual = false;
+      boolean isEqual = false;
 
         if(obj instanceof Book){
-            Book book2 = (Book) obj;
-            isEqual = ((id==book2.id) && (name.equals(book2.name)) && (author.equals(book2.author)));
+            Book book = (Book) obj;
+            isEqual = ((id==book.id) && (name.equals(book.name)) && (author.equals(book.author)));
         }
 
         return isEqual;

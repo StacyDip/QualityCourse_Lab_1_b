@@ -26,15 +26,13 @@ import static org.junit.Assert.assertEquals;
 
 //import org.mockito.Mockito;
 
-public class ApplicationServiceImplTest2 {
+public class ApplicationServiceImplTestIntegration {
 
     private SessionFactory session;
     private ApplicationService service;
     private RepositoryBooks repository;
-//    private Book repository;
 
     @Before
-    //  @Transactional
     public void setUp() throws IOException {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application_context.xml");
@@ -185,3 +183,4 @@ public class ApplicationServiceImplTest2 {
 
 
 }
+
